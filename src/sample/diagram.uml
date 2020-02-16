@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="82.5" y="125.0">sample.Employee</node>
+    <node x="165.0" y="380.0">sample.Staff</node>
+    <node x="99.0" y="0.0">sample.Worker</node>
+    <node x="0.0" y="380.0">sample.Faculty</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="sample.Staff" target="sample.Employee">
+      <point x="0.0" y="-26.5" />
+      <point x="228.5" y="355.0" />
+      <point x="184.5" y="355.0" />
+      <point x="34.0" y="102.5" />
+    </edge>
+    <edge source="sample.Faculty" target="sample.Employee">
+      <point x="0.0" y="-26.5" />
+      <point x="72.5" y="355.0" />
+      <point x="116.5" y="355.0" />
+      <point x="-34.0" y="102.5" />
+    </edge>
+    <edge source="sample.Employee" target="sample.Worker">
+      <point x="0.0" y="-102.5" />
+      <point x="0.0" y="37.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="462.0" y="203.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

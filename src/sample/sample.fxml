@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<SplitPane dividerPositions="0.5009560229445507" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="420.0" prefWidth="507.0" stylesheets="@../stylesheet.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <AnchorPane maxWidth="-Infinity" minWidth="-Infinity" prefHeight="418.0" prefWidth="250.0" SplitPane.resizableWithParent="false">
+      <children>
+           <JFXListView fx:id="employeeListView" depth="10" layoutX="33.0" layoutY="14.0" prefHeight="350.0" prefWidth="185.0" />
+         <HBox alignment="CENTER" layoutY="372.0" prefHeight="40.0" prefWidth="248.0">
+            <children>
+                 <JFXButton fx:id="deleteButton" prefHeight="40.0" prefWidth="116.0" ripplerFill="#00ffcc" text="Delete Selected" textFill="#f2f2f2">
+                  <font>
+                     <Font size="14.0" />
+                  </font></JFXButton>
+            </children>
+         </HBox>
+      </children>
+   </AnchorPane>
+   <AnchorPane maxWidth="-Infinity" minWidth="-Infinity" prefHeight="478.0" prefWidth="250.0" SplitPane.resizableWithParent="false">
+      <children>
+           <HBox layoutY="4.0" prefHeight="61.0" prefWidth="250.0">
+               <JFXTextField fx:id="firstNameTextField" focusColor="#00ffcc" labelFloat="true" prefWidth="150" promptText="First Name" unFocusColor="#f2f2f2">
+               <font>
+                  <Font size="14.0" />
+               </font></JFXTextField>
+            <padding>
+               <Insets bottom="10.0" left="50.0" right="10.0" top="20.0" />
+            </padding>
+           </HBox>
+           <HBox layoutY="69.0" prefHeight="51.0" prefWidth="250.0">
+               <JFXTextField fx:id="lastNameTextField" focusColor="#00ffcc" labelFloat="true" minHeight="-Infinity" minWidth="-Infinity" prefWidth="150" promptText="Last Name" unFocusColor="#f2f2f2">
+               <font>
+                  <Font size="14.0" />
+               </font></JFXTextField>
+            <padding>
+               <Insets bottom="10.0" left="50.0" right="10.0" top="10.0" />
+            </padding>
+           </HBox>
+         <HBox layoutY="124.0" prefHeight="47.0" prefWidth="250.0">
+            <children>
+               <JFXRadioButton fx:id="staffRadioButton" contentDisplay="CENTER" mnemonicParsing="false" text="Staff" textFill="#f2f2f2">
+                  <HBox.margin>
+                     <Insets />
+                  </HBox.margin>
+                  <font>
+                     <Font size="14.0" />
+                  </font>
+               </JFXRadioButton>
+               <JFXRadioButton fx:id="facultyRadioButton" mnemonicParsing="false" text="Faculty" textFill="#f2f2f2">
+                  <HBox.margin>
+                     <Insets left="25.0" />
+                  </HBox.margin>
+                  <font>
+                     <Font size="14.0" />
+                  </font>
+               </JFXRadioButton>
+            </children>
+            <padding>
+               <Insets bottom="10.0" left="50.0" right="10.0" top="20.0" />
+            </padding>
+         </HBox>
+         <HBox fx:id="departmentContainer" layoutY="171.0" prefHeight="51.0" prefWidth="250.0">
+            <children>
+               <JFXComboBox fx:id="departmentSelection" focusColor="#00ffcc" labelFloat="true" prefHeight="25.0" prefWidth="150.0" promptText="Department" unFocusColor="#f2f2f2" />
+            </children>
+            <padding>
+               <Insets bottom="10.0" left="50.0" right="10.0" top="20.0" />
+            </padding>
+         </HBox>
+         <HBox fx:id="accessLevelContainer" layoutY="171.0" prefHeight="51.0" prefWidth="250.0">
+            <children>
+               <JFXComboBox fx:id="accessLevelDropDown" focusColor="#00ffcc" labelFloat="true" prefHeight="25.0" prefWidth="150.0" promptText="Access Level" unFocusColor="#f2f2f2" />
+            </children>
+            <padding>
+               <Insets bottom="10.0" left="50.0" right="10.0" top="20.0" />
+            </padding>
+         </HBox>
+           <HBox layoutY="237.0" prefHeight="51.0" prefWidth="250.0">
+               <JFXCheckBox fx:id="isActiveCheckBox" checkedColor="#00e4ab" prefHeight="18.0" prefWidth="76.0" text="Active" textFill="#f2f2f2" unCheckedColor="#f2f2f2">
+               <HBox.margin>
+                  <Insets left="35.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="14.0" />
+               </font></JFXCheckBox>
+            <padding>
+               <Insets bottom="10.0" left="50.0" right="10.0" top="25.0" />
+            </padding>
+           </HBox>
+           <!--<HBox>
+               <Label text = "Misc." prefWidth="100"/>
+               <TextField prefWidth="150" fx:id="miscTextField"/>
+           </HBox>-->
+           <HBox layoutY="292.0" prefHeight="70.0" prefWidth="250.0" spacing="20.0">
+               <JFXButton fx:id="clearButton" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="60.0" ripplerFill="#00ffcc" text="Clear" textFill="#f2f2f2">
+               <HBox.margin>
+                  <Insets left="25.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+               <JFXButton fx:id="addButton" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="78.0" ripplerFill="#00ffcc" text="Add New" textFill="#f2f2f2">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+            <padding>
+               <Insets bottom="10.0" left="25.0" right="10.0" top="20.0" />
+            </padding>
+           </HBox>
+         <HBox alignment="CENTER" layoutY="367.0" prefHeight="51.0" prefWidth="250.0">
+            <children>
+                  <Label fx:id="errorTextField" minHeight="-Infinity" minWidth="-Infinity" prefHeight="17.0" prefWidth="76.0" text="Invalid Entry" textFill="#f2f2f2">
+                  <font>
+                     <Font size="14.0" />
+                  </font></Label>
+            </children>
+            <padding>
+               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </padding>
+         </HBox>
+      </children>
+   </AnchorPane>
+</SplitPane>
